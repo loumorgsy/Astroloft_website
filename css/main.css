@@ -1,0 +1,273 @@
+html, body {
+  background-color: #444;
+}
+
+
+#banner {
+  height: 100vh;
+  background-image: url('/img/header-image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus{
+  background: none;
+  color: dodgerblue;
+}
+
+.navbar-nav > li > a {
+  color: white;
+  font-size: 1.2em;
+}
+
+#menu {
+  margin: 2% 5% 0 3%;
+}
+
+
+#banner h1  {
+  font-size: 3.5em;
+  color: white;
+  position: absolute;
+  top: 35%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+
+}
+
+.thumbnail {
+
+    padding: 0;
+    border: none;
+    background: none;
+
+}
+
+.thumbnail img {
+  width: 20%;
+
+
+}
+
+#service-row-1 h4{
+  margin-top: 30px;
+  color: dodgerblue;
+
+}
+
+#service-row-1 p{
+  color: white;
+}
+
+#section-head {
+  color: white;
+  margin: 50px 0;
+}
+
+
+/* START OF CAROUSEL */
+
+#theCarousel {
+
+}
+
+.multi-item-carousel .carousel-inner > .item {
+  -webkit-transition: 500ms ease-in-out left;
+  transition: 500ms ease-in-out left;
+}
+.multi-item-carousel .carousel-inner .active.left {
+  left: -33%;
+}
+.multi-item-carousel .carousel-inner .active.right {
+  left: 33%;
+}
+.multi-item-carousel .carousel-inner .next {
+  left: 33%;
+}
+.multi-item-carousel .carousel-inner .prev {
+  left: -33%;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .multi-item-carousel .carousel-inner > .item {
+    -webkit-transition: 500ms ease-in-out all;
+    transition: 500ms ease-in-out all;
+    -webkit-backface-visibility: visible;
+            backface-visibility: visible;
+    -webkit-transform: none!important;
+            transform: none!important;
+  }
+}
+.multi-item-carousel .carouse-control.left,
+.multi-item-carousel .carouse-control.right {
+
+
+}
+body {
+  background: #333;
+  color: #ddd;
+}
+h1 {
+  color: white;
+  font-size: 2.25em;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
+
+}
+
+
+.swiper-container {
+    width: 70%;
+    height: 100%;
+    background: none;
+    margin-top: 100px;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: none;
+
+}
+
+.swiper-slide img {
+  border-radius: 50%;
+  border: 2px solid dodgerblue;
+}
+
+
+.swiper-slide .caption {
+  margin-top: 40px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  top: 50%;
+  margin: 0;
+  padding: 0;
+}
+
+/* start of the mobile menu */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+.nav-bary {
+	width: 100%;
+	position: fixed;
+	height:100px;
+	z-index: 999;
+	top: 0;
+	font-size: 18px;
+
+}
+.nav-bary li:last-child {
+	margin-right: 60px;
+}
+
+a {
+	text-decoration: none;
+	color:inherit;
+}
+
+nav ul {
+	overflow: hidden;
+	text-align:right;
+	padding: 1%;
+	margin-left: 0;
+  -webkit-transition: max-height 0.4s;
+	-ms-transition: max-height 0.4s;
+	-moz-transition: max-height 0.4s;
+	-0-transition: max-height 0.4s;
+	transition: max-height 0.4s;
+}
+
+nav ul li {
+	display: inline-block;
+	text-transform: uppercase;
+
+	font-weight: 400;
+	padding: 10px 15px;
+	letter-spacing: 1px;
+	color: #fff;
+}
+
+ nav a:hover {
+	color: #70B8FF;
+}
+/* Mobile navigation */
+.mobile-icon {
+	width: 100%;
+	text-align: right;
+	box-sizing: border-box;
+	cursor: pointer;
+	color: #fff;
+	display: none;
+	font-size: 20px;
+	font-family: bold;
+	margin: 2% 2%;
+	position: relative;
+	padding-left: 1.25em;
+}
+/* style of mobile icon */
+.mobile-icon:before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0.3em;
+	width: 1.2em;
+	height: 0.16em;
+	background: white;
+	box-shadow: 0 0.35em 0 0 white, 0 0.7em 0 0 white;
+}
+/* end */
+
+@media screen and (max-width: 943px) {
+
+		.mobile-icon {
+			display: block;
+		}
+
+		nav ul {
+
+			max-height: 0px;
+			padding: 0px;
+		}
+
+		/* mobile nav  */
+		.showing {
+
+			max-height: 100vh;
+			padding-bottom: 10px;
+			font-size: 18px;
+      background-color: #000
+		}
+		/* end */
+
+		.nav-bary {
+			width:100%;
+      height: 100vh;
+
+		}
+
+		nav ul li {
+			box-sizing: border-box;
+			width: 100%;
+			text-align: center;
+		}
+
+		nav ul li:hover {
+			background-color: #fff;
+			width: 100%;
+      color: #70B8FF;
+		}
+
+		.nav-bary {
+			display: block;
+		}
+}
+/* end of the mobile menu */

@@ -1,0 +1,28 @@
+#banner {
+  height: 100vh;
+  background-image: url('img/header-image.jpg');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus{
+  background: none;
+}
+
+
+
+h1 {
+  color: blue;
+}
