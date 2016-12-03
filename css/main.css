@@ -187,6 +187,10 @@ ul {
   margin-top: 10px;
 }
 
+.arrow-up {
+  font-size:25px;
+}
+
 @-webkit-keyframes bounce {
   0%       { bottom:5px; }
   15%      { bottom:10px; }
@@ -195,6 +199,33 @@ ul {
   100%     {bottom:0;}
 }
 
+footer {
+  background: #191919;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer-item {
+  color: #8e8e8e;
+  width: 25%;
+  margin-top:25px;
+  margin-bottom: 25px;
+}
+
+hr{
+  border-color: #383838;
+}
+
+.social-icon {
+  display: inline-block;
+  margin-right: 15px;
+  font-size:17px;
+}
+
+.footer-logo img{
+  width: 50px;
+  margin-bottom: 15px;
+}
 
 
 /* START OF CAROUSEL */
