@@ -5,7 +5,7 @@ html, body {
 
 #banner {
   height: 100vh;
-  background-image: url('/img/header-image.jpg');
+  background-image: url('./../img/header-image.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 
