@@ -11,7 +11,8 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/swiper.min.css">
+        <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+        <link rel="stylesheet" href="css/swiper.css">
 
         <link rel="stylesheet" href="css/main.css">
 
@@ -36,21 +37,19 @@
           </ul>
         </div>
       </div>-->
-      <h1 class="text-center">LAUNCH.<br>IT'S NEVER BEEN SO EASY</br><br><span class="glyphicon glyphicon-menu-down"></span></br></h1>
+      <h1 class="text-center"><span id="launch">LAUNCH.</span>
+          <br>IT'S NEVER BEEN SO EASY</br>
+          <br><div class="bounce"><span class="glyphicon glyphicon-menu-down bounce"></span></div></br>
+      </h1>
       <nav>
         <div class="navigation" role="navigation">
         	<div class="nav-bary">
             <div class="mobile-icon">.</div>
             <ul>
-              <li><a  href="#">Menu1</a></li>
-
-              <li><a href="#">Menu2</a></li>
-
-              <li><a  href="#">Menu3</a></li>
-
-              <li><a href="#">Menu4</a></li>
-
-              <li><a  href="#">Menu5</a></li>
+              <img class="logo left" src="./img/logo.png">
+              <li><a  href="#">About</a></li>
+              <li><a href="#">Work</a></li>
+              <li><a  href="#">Contact</a></li>
             </ul>
            </div>
           </div>
@@ -59,7 +58,7 @@
 
     </section> <!-- END OF BANNER SECTION -->
 
-    <section> <!-- start of services section -->
+    <section id="help"> <!-- start of services section -->
     <div class="container">
 
       <h2 id="section-head" class="text-center">HOW WE CAN HELP</h2>
@@ -141,51 +140,56 @@
 
     </section> <!-- end of services section -->
 
-      <section> <!-- start of team section -->
-
-<h1>MEET OUT TEAM</h1>
-
-<div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><div class="caption">NAME</div><p>web design</p></div>
-
-
-            <div class="swiper-slide" ><img src="img/people/edited/ivo.jpg"/><div class="caption">NAME</div><p>web design</p></div>
-
-
-        </div>
-        <!-- Add Arrows -->
-       <div class="swiper-button-next"></div>
-       <div class="swiper-button-prev"></div>
-</div>
-
-
+      <section id="team"> <!-- start of team section -->
+          <h2 id="section-head" class="text-center">Meet Our Team</h2>
+          <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide" ><img src="img/people/jakelucifer.jpg"/><div class="caption">Jake Lucifer</div><p>web design</p></div>
+                      <div class="swiper-slide" ><img src="img/people/notjefffree.jpeg"/><div class="caption">Jake Lucifer</div><p>web design</p></div>
+                      <div class="swiper-slide" ><img src="img/people/tomrdesigns.jpg"/><div class="caption">Tom Robets</div><p>web design</p></div>
+                      <div class="swiper-slide" ><img src="img/people/oseii.jpg"/><div class="caption">Jake Lucifer</div><p>web design</p></div>
+                      <div class="swiper-slide" ><img src="img/people/owendesigns.jpg"/><div class="caption">Jake Lucifer</div><p>web design</p></div>
+                      <div class="swiper-slide" ><img src="img/people/tenze.jpg"/><div class="caption">Jake Lucifer</div><p>web design</p></div>
+                  </div>
+                  <!-- Add Arrows -->
+                 <div class="swiper-button-next swiper-button-white"></div>
+                 <div class="swiper-button-prev swiper-button-white"></div>
+          </div>
       </section> <!-- end of team section -->
 
-      <div id="service-row-1" class="col-md-4">
-        <div class="thumbnail">
-          <img src="img/idea.png"/>
-          <div class="caption">
-            <h4>IDEA FORMATION</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi impedit hic ipsam, facere delectus, reiciendis repellat ratione ducimus doloremque, cupiditate assumenda consequatur incidunt laudantium molestias est omnis et sequi.
-            </p>
+      <section id="work">
+          <div class="container">
+              <h2 id="section-head" class="text-center">View Our work</h2>
           </div>
-        </div>
-      </div>
+      </section>
 
-      <div id="service-row-1" class="col-md-4">
-        <div class="thumbnail">
-          <img src="img/idea.png"/>
-          <div class="caption">
-            <h4>IDEA FORMATION</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi impedit hic ipsam, facere delectus, reiciendis repellat ratione ducimus doloremque, cupiditate assumenda consequatur incidunt laudantium molestias est omnis et sequi.
-            </p>
+      <section id="companies">
+          <div class="container">
+              <div class="companies-container">
+                  <div class="company-item">
+                    <img src="https://static.festisite.com/static/partylogo/img/logos/nike.png">
+                  </div>
+                  <div class="company-item">
+                    <img src="http://prophecyteam.net/wp-content/uploads/2015/01/Gfuel1.png">
+                  </div>
+                  <div class="company-item">
+                    <img src="https://static.festisite.com/static/partylogo/img/logos/nike.png">
+                  </div>
+                  <div class="company-item">
+                    <img src="http://prophecyteam.net/wp-content/uploads/2015/01/Gfuel1.png">
+                  </div>
+                  <div class="company-item">
+                    <img src="https://static.festisite.com/static/partylogo/img/logos/nike.png">
+                  </div>
+              </div>
           </div>
-        </div>
-      </div>
+      </section>
 
+      <section id="contact">
+          <div class="container">
+              <h2 id="section-head" class="text-center" style="color:#000">Contact Us</h2>
+          </div>
+      </section>
 
 <!-- /* Center slide text vertically */
 display: -webkit-box;
