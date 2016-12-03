@@ -16,7 +16,7 @@ html, body {
   width: 100%;
   height: 100%;
   z-index: 1;
-  opacity: 0.3;
+  opacity: 0.2;
   background-image: url('./../img/header-image.jpg');
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -47,6 +47,7 @@ html, body {
 .navbar-nav > li > a:hover, .navbar-nav > li > a:focus{
   background: none;
   color: #3076d0;
+  transition: .2s all ease-in-out!important;
 }
 
 .navbar-nav > li > a {
@@ -97,8 +98,70 @@ html, body {
 
 #section-head {
   color: white;
-  margin: 50px 0;
+  margin: 70px 0;
+  font-weight: bold;
+  font-size: 37px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
 }
+
+.row {
+  margin-bottom: 50px;
+}
+
+#team {
+  padding-bottom:100px;
+}
+
+#work {
+  background: #191919;
+}
+
+#help{
+  background: #191919;
+}
+
+#companies {
+  background:#e8e8e8;
+}
+
+#contact {
+  background: #fff;
+}
+
+.companies-container {
+  padding: 40px;
+}
+
+.company-item {
+  display: inline-block;
+  margin-right: 100px;
+}
+.company-item img{
+  width: 100px
+}
+
+.swiper-slide img {
+  width: 210px;
+  height: 210px;
+}
+
+.bounce {
+  position: relative;
+  margin: auto;
+  height:50px;
+  width:50px;
+  -webkit-animation:bounce 0.8s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%       { bottom:5px; }
+  15%      { bottom:10px; }
+  25%, 75% { bottom:15px; }
+  50%      { bottom:20px; }
+  100%     {bottom:0;}
+}
+
 
 
 /* START OF CAROUSEL */
@@ -229,7 +292,11 @@ nav ul li {
 }
 
  nav a:hover {
-	color: #70B8FF;
+	color: #0f81e6;
+  text-decoration: none;
+  border-bottom: 2px solid #0f81e6;
+  padding-bottom: 4px;
+  transition: .2s all ease-in-out!important;
 }
 /* Mobile navigation */
 .mobile-icon {
@@ -257,6 +324,7 @@ nav ul li {
 	box-shadow: 0 0.35em 0 0 white, 0 0.7em 0 0 white;
 }
 /* end */
+
 
 @media screen and (max-width: 943px) {
 
