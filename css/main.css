@@ -162,7 +162,12 @@ ul {
   text-align: center;
 }
 
+.hide {
+  display: none;
+}
+
 .work-header {
+  cursor: pointer;
   display: inline;
   margin-right: 80px;
   font-size: 14px;
