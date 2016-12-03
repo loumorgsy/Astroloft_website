@@ -13,7 +13,6 @@
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
         <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
         <link rel="stylesheet" href="css/swiper.css">
-
         <link rel="stylesheet" href="css/main.css">
 
     </head>
@@ -25,6 +24,8 @@
         <!-- Add your site or application content here -->
 
     <section id="banner">
+
+      <img class="logo left" src="./img/logo.png">
       <!--<div class='navbar navbar-static-top'>
         <div class='container-fluid' id="menu">
           <a href='/' class='navbar-brand'><img src="img/logo.svg" height="75px" width="75px"/></a>
@@ -41,19 +42,45 @@
           <br>IT'S NEVER BEEN SO EASY</br>
           <br><div class="bounce"><span class="glyphicon glyphicon-menu-down bounce"></span></div></br>
       </h1>
-      <nav>
+      <!--<nav>
         <div class="navigation" role="navigation">
         	<div class="nav-bary">
             <div class="mobile-icon">.</div>
             <ul>
               <img class="logo left" src="./img/logo.png">
-              <li><a  href="#">About</a></li>
-              <li><a href="#">Work</a></li>
-              <li><a  href="#">Contact</a></li>
+              <li><a  href="#team-part">About</a></li>
+              <li><a href="#work-part">Work</a></li>
+              <li><a  href="#contact-part">Contact</a></li>
             </ul>
            </div>
           </div>
-          </nav>
+        </nav>-->
+            <nav class="navbar">
+                <div class="navbar-wrapper">
+                  <div class="navbar-header">
+                      <button type="button" id="nav-icon" class="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                      </button>
+                  </div>
+                <ul class="menu-toggle desktop-menu">
+                  <li><a href="#about-part">About Us</a></li>
+                  <li><a href="#about-part">About Us</a></li>
+                  <li><a href="#about-part">About Us</a></li>
+
+
+                </ul>
+              </div>
+            </nav>
+
+            <nav>
+              <a href="#about-part"></a>
+              <a href="#work-part"></a>
+              <a href=""></a>
+              <a href=""></a>
+            </nav>
 
 
     </section> <!-- END OF BANNER SECTION -->
@@ -139,24 +166,28 @@
     </div>
 
     </section> <!-- end of services section -->
-
+    <div id="team-part"></div>
       <section id="team"> <!-- start of team section -->
+
+        <div id="about-part">
+
+        </div>
           <h2 id="section-head" class="text-center">Meet Our Team</h2>
           <div class="swiper-container">
                   <div class="swiper-wrapper">
-                      <div class="swiper-slide" ><img src="img/people/jakelucifer.jpg"/><div class="caption">Jake Lucifer</div><p>web design</p></div>
-                      <div class="swiper-slide" ><img src="img/people/notjefffree.jpeg"/><div class="caption">Jake Lucifer</div><p>web design</p></div>
-                      <div class="swiper-slide" ><img src="img/people/tomrdesigns.jpg"/><div class="caption">Tom Robets</div><p>web design</p></div>
-                      <div class="swiper-slide" ><img src="img/people/oseii.jpg"/><div class="caption">Jake Lucifer</div><p>web design</p></div>
-                      <div class="swiper-slide" ><img src="img/people/owendesigns.jpg"/><div class="caption">Jake Lucifer</div><p>web design</p></div>
-                      <div class="swiper-slide" ><img src="img/people/tenze.jpg"/><div class="caption">Jake Lucifer</div><p>web design</p></div>
+                      <div class="swiper-slide"><img src="img/people/jakelucifer.jpg"/><div class="caption">Jake Lucifer</div><p>web design</p></div>
+                      <div class="swiper-slide"><img src="img/people/notjefffree.jpeg"/><div class="caption">Jake Lucifer</div><p>web design</p></div>
+                      <div class="swiper-slide"><img src="img/people/tomrdesigns.jpg"/><div class="caption">Tom Robets</div><p>web design</p></div>
+                      <div class="swiper-slide"><img src="img/people/oseii.jpg"/><div class="caption">Jake Lucifer</div><p>web design</p></div>
+                      <div class="swiper-slide"><img src="img/people/owendesigns.jpg"/><div class="caption">Jake Lucifer</div><p>web design</p></div>
+                      <div class="swiper-slide"><img src="img/people/tenze.jpg"/><div class="caption">Jake Lucifer</div><p>web design</p></div>
                   </div>
                   <!-- Add Arrows -->
                  <div class="swiper-button-next swiper-button-white"></div>
                  <div class="swiper-button-prev swiper-button-white"></div>
           </div>
       </section> <!-- end of team section -->
-
+      <div id="work-part"></div>
       <section id="work">
           <div class="container">
               <h2 id="section-head" class="text-center">View Our work</h2>
@@ -172,40 +203,25 @@
                   <div class="company-item">
                     <img src="http://prophecyteam.net/wp-content/uploads/2015/01/Gfuel1.png">
                   </div>
-                  <div class="company-item">
+                  <div class="company-item resp">
                     <img src="https://static.festisite.com/static/partylogo/img/logos/nike.png">
                   </div>
-                  <div class="company-item">
+                  <div class="company-item resp">
                     <img src="http://prophecyteam.net/wp-content/uploads/2015/01/Gfuel1.png">
                   </div>
-                  <div class="company-item">
+                  <div class="company-item resp">
                     <img src="https://static.festisite.com/static/partylogo/img/logos/nike.png">
                   </div>
               </div>
           </div>
       </section>
-
+        <div id="contact-part"></div>
       <section id="contact">
           <div class="container">
               <h2 id="section-head" class="text-center" style="color:#000">Contact Us</h2>
           </div>
       </section>
 
-<!-- /* Center slide text vertically */
-display: -webkit-box;
-display: -ms-flexbox;
-display: -webkit-flex;
-display: flex;
--webkit-box-pack: center;
--ms-flex-pack: center;
--webkit-justify-content: center;
-justify-content: center;
--webkit-box-align: center;
--ms-flex-align: center;
--webkit-align-items: center;
-align-items: center;
-
-}-->
 
 
 
@@ -241,32 +257,11 @@ align-items: center;
 
 
 
-        <script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <script src="js/swiper.min.js"></script>
         <script src="js/main.js"></script>
-        <!--<script>$('#theCarousel').carousel({
-              interval: false
-            })
 
-            $('.multi-item-carousel .item').each(function(){
-              var next = $(this).next();
-              if (!next.length) {
-                next = $(this).siblings(':first');
-              }
-              next.children(':first-child').clone().appendTo($(this));
-
-              if (next.next().length>0) {
-                next.next().children(':first-child').clone().appendTo($(this));
-              }
-              else {
-              	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-              }
-            });
-        </script>-->
         <script>
           var swiper = new Swiper('.swiper-container', {
             pagination: '.swiper-pagination',
@@ -277,11 +272,19 @@ align-items: center;
             loop: true,
             breakpoints: {
             1024: {
-                slidesPerView: 4,
+                slidesPerView: 3,
                 spaceBetween: 40
             },
+            942: {
+              slidesPerView: 2,
+              spaceBetween: 30
+            },
+            790: {
+              slidesPerView: 2,
+              spaceBetween: 30
+            },
             768: {
-                slidesPerView: 3,
+                slidesPerView: 2,
                 spaceBetween: 30
             },
             640: {
