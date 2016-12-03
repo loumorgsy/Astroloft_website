@@ -2,6 +2,9 @@ html, body {
   background-color: #444;
 }
 
+ul {
+  list-style: none;
+}
 
 #banner {
   height: 100vh;
@@ -152,6 +155,31 @@ html, body {
   height:50px;
   width:50px;
   -webkit-animation:bounce 0.8s infinite;
+}
+
+.work-header-container {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.work-header {
+  display: inline;
+  margin-right: 80px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.selected {
+  color:#1d5d8f;
+}
+
+.work-image {
+  background: #fff;
+  width: 250px;
+  height: 200px;
+  margin-right: 15px;
+  margin-top: 10px;
 }
 
 @-webkit-keyframes bounce {
