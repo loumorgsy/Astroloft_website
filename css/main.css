@@ -191,6 +191,20 @@ ul {
   font-size:25px;
 }
 
+.contact-btn {
+  position: relative;
+  margin: 0 auto;
+  left:50%;
+  border-radius: 3px;
+  padding: 15px 55px;
+  text-transform: uppercase;
+  background: #000;
+  color:#fff;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
 @-webkit-keyframes bounce {
   0%       { bottom:5px; }
   15%      { bottom:10px; }
