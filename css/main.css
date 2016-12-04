@@ -266,6 +266,7 @@ nav {
   text-align: center;
   display: inline-block;
   margin-bottom: 25px;
+
 }
 
 @-webkit-keyframes bounce {
@@ -307,41 +308,6 @@ hr{
 
 /* START OF CAROUSEL */
 
-#theCarousel {
-
-}
-
-.multi-item-carousel .carousel-inner > .item {
-  -webkit-transition: 500ms ease-in-out left;
-  transition: 500ms ease-in-out left;
-}
-.multi-item-carousel .carousel-inner .active.left {
-  left: -33%;
-}
-.multi-item-carousel .carousel-inner .active.right {
-  left: 33%;
-}
-.multi-item-carousel .carousel-inner .next {
-  left: 33%;
-}
-.multi-item-carousel .carousel-inner .prev {
-  left: -33%;
-}
-@media all and (transform-3d), (-webkit-transform-3d) {
-  .multi-item-carousel .carousel-inner > .item {
-    -webkit-transition: 500ms ease-in-out all;
-    transition: 500ms ease-in-out all;
-    -webkit-backface-visibility: visible;
-            backface-visibility: visible;
-    -webkit-transform: none!important;
-            transform: none!important;
-  }
-}
-.multi-item-carousel .carouse-control.left,
-.multi-item-carousel .carouse-control.right {
-
-
-}
 body {
   background: #333;
   color: #ddd;
@@ -355,6 +321,47 @@ h1 {
 
 }
 
+/* start of team mobile */
+
+.view-more {
+  border-radius: 50px;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  height: 50px;
+  width: 150px;
+  margin: 40px 0;
+}
+
+.view-more.hide {
+  visibility: hidden;
+}
+
+#mobile-team {
+  visibility: hidden;
+  display: none;
+}
+
+#mobile-team.show {
+  display: block;
+  visibility: visible;
+}
+
+.member img{
+  width: 50%;
+  border-radius: 50%;
+  padding-bottom: 10px;
+
+}
+
+.view-more-desktop {
+  visibility: hidden;
+  display: none;
+}
+
+.swiper-container.hide {
+  display: none;
+}
 
 .swiper-container {
     width: 70%;
@@ -418,7 +425,7 @@ h1 {
     transition: all 0.4s;
   }
 
-  #desktop-nav a::hover {
+  #desktop-nav a:hover {
     color: dodgerblue;
     border-bottom: 2px solid dodgerblue;
   }
@@ -432,6 +439,27 @@ h1 {
     font-weight: bold;
     text-transform: uppercase;
   }
+
+    .view-more {
+      visibility: hidden;
+      display: none;
+    }
+
+    #mobile-team {
+      visibility: hidden;
+      display: none;
+    }
+
+    .view-more-desktop {
+      border-radius: 50px;
+      background-color: dodgerblue;
+      color: white;
+      border: none;
+      height: 50px;
+      width: 150px;
+      margin: 40px 0;
+    }
+
 
 
 }
