@@ -8,9 +8,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET')
   header('Location: http://astroloft.com');
 }
 
-if (isset($_POST['contact-submit']))
+if ($_SERVER['REQUEST_METHOD'] === 'POST')
 {
-  if (!isset($_POST['name']) || !isset($_POST['email']) || !isset($_POST['message']))
+  if (!empty($_POST['name']) || !empty($_POST['email']) || !empty($_POST['message']))
   {
     die(json_encode(array('status' => 0, 'message' => 'Not all fields have been completed')));
   }

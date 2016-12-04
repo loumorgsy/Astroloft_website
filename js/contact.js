@@ -6,17 +6,17 @@
         {
          name: $('input[name="contactname"]').val(),
          email: $('input[name="email"]').val(),
-         message: $('.message').val(),
+         message: $('#message').val(),
         },
         type: "POST",
         dataType: "json",
         success: function (data)
         {
-          if (data.success == 1)
+          if (data.status == 1)
           {
             alert(data.message);
           }
-          else if(data.success == 0)
+          else if(data.status == 0)
           {
             alert(data.message)
           }
