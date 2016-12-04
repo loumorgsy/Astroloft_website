@@ -360,11 +360,13 @@ h1 {
     text-align: center;
     font-size: 18px;
     background: none;
+    border: 2px dodgerblue;
 
 }
 
 .swiper-slide img {
   border-radius: 50%;
+  border: 2px dodgerblue;
 }
 
 
@@ -373,26 +375,53 @@ h1 {
 }
 
 .swiper-button-next, .swiper-button-prev {
-  top: 50%;
+
+
   margin: 0;
   padding: 0;
+
 }
 
 /* start of the mobile menu */
-
+#desktop-nav {
+  display: none;
+}
 
 
 
 @media screen and (min-width: 655px) {
-  .navbar-header {
-
-
+  .navbar {
+    display: none;
   }
+
+  #desktop-nav {
+    display: inline;
+    float: right;
+    width: 50%;
+    text-align: right;
+    margin-right: 100px;
+    margin-top: 20px;
+  }
+
+  #desktop-nav a{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em;
+    padding: 5%;
+    transition: all 0.4s;
+  }
+
+  #desktop-nav a::hover {
+    color: dodgerblue;
+    border-bottom: 2px solid dodgerblue;
+  }
+
 
   .work-header {
     cursor: pointer;
     display: inline;
-    margin-right: 80px;
+    margin: 1%;
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
