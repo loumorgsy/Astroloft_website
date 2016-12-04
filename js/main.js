@@ -16,8 +16,16 @@ $( document ).ready(function() {
 						scrollTop: target.offset().top
 					}, 1000);
 					return false;
-		}
-	}
-});
-});
+					}
+				}
+		});
+	});
+	$(".view-more").on("click", function(){
+		$(".swiper-container").fadeOut('slow');
+		$("#mobile-team").fadeIn('slow', function(){
+			$("#mobile-team").addClass("show");
+		})
+		$(".view-more").addClass("hide");
+
+	})
 });
