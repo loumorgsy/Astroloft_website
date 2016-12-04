@@ -129,7 +129,8 @@ nav {
 }
 
 .thumbnail img {
-  width: 5em;
+  width: 100px;
+  height: 100px;
 
 
 }
@@ -138,6 +139,10 @@ nav {
   margin-top: 30px;
   color: dodgerblue;
 
+}
+
+#service-row-1 {
+  margin-bottom: 30px;
 }
 
 #service-row-1 p{
