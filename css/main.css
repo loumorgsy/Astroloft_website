@@ -48,24 +48,6 @@ ul {
   width: 50px;
   height: 50px;
 }
-/*
-.navbar-nav > li > a:hover, .navbar-nav > li > a:focus{
-  background: none;
-  color: red;
-  transition: .2s all ease-in-out!important;
-}
-
-.navbar-nav > li > a {
-  color: red;
-  font-size: 1.2em;
-}
-
-#menu {
-  margin: 2% 5% 0 3%;
-}
-*/
-
-/* attempt */
 
 nav {
   margin: 0;
@@ -73,6 +55,7 @@ nav {
 }
 
 .navbar-wrapper {
+
     float: right;
     height: 50px;
     width: 50px;
@@ -234,6 +217,11 @@ nav {
 .work-header-container {
   margin-bottom: 50px;
   text-align: center;
+  padding: 0;
+}
+
+.work-header-container ul {
+  padding: 0;
 }
 
 .hide {
@@ -243,32 +231,33 @@ nav {
 .work-header {
   cursor: pointer;
   display: inline;
-  margin-right: 80px;
+  padding: 1%;
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .selected {
-  color:#1d5d8f;
+  color:dodgerblue;
+  border-bottom: 1px solid dodgerblue;
+  top: -10;
+  transition: all 0.4s;
 }
 
 .work-image {
   background: #fff;
   width: 250px;
   height: 200px;
-  margin-right: 15px;
-  margin-top: 10px;
+  margin-right: 10px;
+  margin-top: 15px;
 }
 
-.arrow-up {
+.arrow-up a{
   font-size:25px;
+  color: white;
 }
 
 .contact-btn {
-  position: relative;
-  margin: 0 auto;
-  left:50%;
   border-radius: 3px;
   padding: 15px 55px;
   text-transform: uppercase;
@@ -377,11 +366,13 @@ h1 {
     text-align: center;
     font-size: 18px;
     background: none;
+    border: 2px dodgerblue;
 
 }
 
 .swiper-slide img {
   border-radius: 50%;
+  border: 2px dodgerblue;
 }
 
 
@@ -390,23 +381,57 @@ h1 {
 }
 
 .swiper-button-next, .swiper-button-prev {
-  top: 50%;
+
+
   margin: 0;
   padding: 0;
+
 }
 
 /* start of the mobile menu */
-
+#desktop-nav {
+  display: none;
+}
 
 
 
 @media screen and (min-width: 655px) {
-  .navbar-header {
+  .navbar {
     display: none;
+  }
 
+  #desktop-nav {
+    display: inline;
+    float: right;
+    width: 50%;
+    text-align: right;
+    margin-right: 100px;
+    margin-top: 20px;
+  }
+
+  #desktop-nav a{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em;
+    padding: 5%;
+    transition: all 0.4s;
+  }
+
+  #desktop-nav a::hover {
+    color: dodgerblue;
+    border-bottom: 2px solid dodgerblue;
   }
 
 
+  .work-header {
+    cursor: pointer;
+    display: inline;
+    margin: 1%;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 
 
 }
