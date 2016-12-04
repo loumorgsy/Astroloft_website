@@ -4,7 +4,7 @@
         url: "contact.php",
         data:
         {
-         name: $('input[name="contactname"]').val(),
+         name: $('input[name="name"]').val(),
          email: $('input[name="email"]').val(),
          message: $('#message').val(),
         },
@@ -14,17 +14,17 @@
         {
           if (data.status == 1)
           {
-            alert(data.message);
+            swal("Success", data.message, "success");
           }
           else if(data.status == 0)
           {
-            alert(data.message)
+            swal("Oops!", data.message, "error");
           }
         },
 
         error: function (xhr, status)
         {
-          alert('There was an error');
+          swal("Oops!", 'We\'ve encountered an error', "error");
         }
 
       });

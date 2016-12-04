@@ -10,7 +10,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET')
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST')
 {
-  if (!empty($_POST['name']) || !empty($_POST['email']) || !empty($_POST['message']))
+
+  if (empty($_POST['name']) || empty($_POST['email']) || empty($_POST['message']))
   {
     die(json_encode(array('status' => 0, 'message' => 'Not all fields have been completed')));
   }
@@ -18,6 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
   {
     die(json_encode(array('status' => 0, 'message' => 'You have not entered a valid email address')));
   }
+  
   $headers = "From: webmaster@example.com";
   $subject = 'Contact Request';
   mail(CONTACT_EMAIL, $subject , $_POST['message'],$headers);
