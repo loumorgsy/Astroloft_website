@@ -48,24 +48,6 @@ ul {
   width: 50px;
   height: 50px;
 }
-/*
-.navbar-nav > li > a:hover, .navbar-nav > li > a:focus{
-  background: none;
-  color: red;
-  transition: .2s all ease-in-out!important;
-}
-
-.navbar-nav > li > a {
-  color: red;
-  font-size: 1.2em;
-}
-
-#menu {
-  margin: 2% 5% 0 3%;
-}
-*/
-
-/* attempt */
 
 nav {
   margin: 0;
@@ -73,6 +55,7 @@ nav {
 }
 
 .navbar-wrapper {
+
     float: right;
     height: 50px;
     width: 50px;
@@ -243,7 +226,7 @@ nav {
 .work-header {
   cursor: pointer;
   display: inline;
-  margin-right: 80px;
+  padding: 1%;
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
@@ -251,6 +234,9 @@ nav {
 
 .selected {
   color:#1d5d8f;
+  border-bottom: 1px solid #1d5d8f;
+  top: -10;
+  transition: all 0.4s;
 }
 
 .work-image {
@@ -266,9 +252,6 @@ nav {
 }
 
 .contact-btn {
-  position: relative;
-  margin: 0 auto;
-  left:50%;
   border-radius: 3px;
   padding: 15px 55px;
   text-transform: uppercase;
@@ -402,11 +385,18 @@ h1 {
 
 @media screen and (min-width: 655px) {
   .navbar-header {
-    display: none;
+
 
   }
 
-
+  .work-header {
+    cursor: pointer;
+    display: inline;
+    margin-right: 80px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 
 
 }
