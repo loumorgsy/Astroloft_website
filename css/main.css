@@ -158,7 +158,11 @@ nav {
 }
 
 #team {
-  padding-bottom:100px;
+  padding-bottom:50px;
+}
+
+.team-head {
+  margin-top: 30px;
 }
 
 #work {
@@ -439,6 +443,8 @@ h1 {
     }
 
     .view-more-desktop {
+      display: inline;
+      visibility: visible;
       border-radius: 50px;
       background-color: dodgerblue;
       color: white;
