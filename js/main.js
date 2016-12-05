@@ -6,6 +6,16 @@ $( document ).ready(function() {
 		$(".menu-toggle").removeClass("open");
 
 	})
+
+  $(".work-image").hover(function(){
+    $(".overlay, .overlay h4").fadeIn('slow', function(){
+      $(".overlay, .overlay h4").toggleClass("shown");
+
+    })
+
+    
+
+
 	$(function() {
 		$('a[href*="#"]:not([href="#"])').click(function() {
 			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
