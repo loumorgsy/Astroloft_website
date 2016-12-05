@@ -165,6 +165,10 @@ nav {
   padding-bottom:50px;
 }
 
+.team-page-container {
+  margin-top: 100px;
+}
+
 .team-head {
   margin-top: 30px;
 }
@@ -276,6 +280,17 @@ nav {
   text-align: center;
 }
 
+.member-image {
+
+}
+
+.member-image img{
+  background: #fff;
+  border-radius: 100%;
+  width: 220px;
+  height: 220px;
+}
+
 .name {
   color: #fff;
   font-size:18px;
@@ -336,6 +351,8 @@ hr{
   margin-right: 15px;
   font-size:17px;
 }
+
+
 
 .footer-logo img{
   width: 50px;
