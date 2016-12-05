@@ -280,21 +280,15 @@ nav {
 }
 
 .overlay {
-  visibility: hidden;
   display: none;
-
-
-
 }
 
 .overlay h4 {
-  visibility: hidden;
-
+  display: none;
 }
 
 .overlay.shown {
-  display: block;
-  visibility: visible;
+  display: none;
   position: absolute;
   opacity: 0.8;
   background-color: #000;
@@ -375,7 +369,7 @@ footer {
 
 .footer-item {
   color: #8e8e8e;
-  width: 25%;
+  width: 30%;
   margin-top:25px;
   margin-bottom: 25px;
 }
