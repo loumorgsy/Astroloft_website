@@ -302,7 +302,12 @@ nav {
   position: relative;
   top: 40%;
   opacity: 1;
-  color: dodgerblue;
+  color: white
+
+}
+
+.work-container {
+  padding-bottom: 100px;
 }
 
 
@@ -339,6 +344,14 @@ nav {
 .arrow-up a{
   font-size:25px;
   color: white;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.message-field {
+  margin: 0;
 }
 
 .contact-btn {
