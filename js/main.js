@@ -8,12 +8,11 @@ $( document ).ready(function() {
 	})
 
   $(".work-image").hover(function(){
-    $(".overlay, .overlay h4").fadeIn('slow', function(){
-      $(".overlay, .overlay h4").toggleClass("shown");
+    $(".overlay, .overlay h4").toggleClass('shown');
 
     })
 
-    
+
 
 
 	$(function() {
