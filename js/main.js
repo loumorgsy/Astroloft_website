@@ -8,11 +8,9 @@ $( document ).ready(function() {
 	})
 
   $(".work-image").hover(function(){
-    $(".overlay, .overlay h4").toggleClass('shown');
-
+		$(this).find('.overlay').toggleClass('shown').fadeToggle();
+		$(this).find('h4').toggleClass('shown')
     })
-
-
 
 
 	$(function() {
