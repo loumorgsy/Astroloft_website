@@ -257,6 +257,17 @@ nav {
   text-align: center;
 }
 
+.member-image {
+
+}
+
+.member-image img{
+  background: #fff;
+  border-radius: 100%;
+  width: 220px;
+  height: 220px;
+}
+
 .name {
   color: #fff;
   font-size:18px;
