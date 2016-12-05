@@ -495,16 +495,29 @@ h1 {
 
 }
 
+
+
 /* start of the mobile menu */
 #desktop-nav {
   display: none;
 }
 
+.swiper-button-prev, .swiper-button-next {
+  margin-top: 100px;
+
+}
 
 
 @media screen and (min-width: 655px) {
   .navbar {
     display: none;
+  }
+
+
+  .swiper-button-next, .swiper-button-prev {
+      margin: 0;
+      padding: 0;
+      margin-top: 100px;
   }
 
   #desktop-nav {
