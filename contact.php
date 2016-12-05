@@ -19,9 +19,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
   {
     die(json_encode(array('status' => 0, 'message' => 'You have not entered a valid email address')));
   }
-  
+
   $headers = "From: webmaster@example.com";
   $subject = 'Contact Request';
   mail(CONTACT_EMAIL, $subject , $_POST['message'],$headers);
-  die(json_encode(array('status' => 0, 'message' => 'Thanks for contacting Astroloft')));
+  die(json_encode(array('status' => 1, 'message' => 'Thanks for contacting Astroloft')));
 }
